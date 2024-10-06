@@ -18,8 +18,8 @@ services:
       - root_connection
 
   phpmyadmin:
-    container_name: rdbms
-    image: phpmyadmin:5.2
+    container_name: pma
+    image: phpmyadmin:latest
     restart: always
     environment:
       PMA_HOST: mysql
