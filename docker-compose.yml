@@ -34,7 +34,7 @@ services:
       PMA_AUTH_TYPE: config # Menggunakan tipe otentikasi config
       UPLOAD_LIMIT: 500M
     ports:
-      - "8080:80"
+      - "3306:80"
     depends_on:
       - mysql # Start Service after mysql running
     networks:
