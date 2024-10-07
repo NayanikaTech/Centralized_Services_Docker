@@ -16,6 +16,11 @@ services:
       - mysql_data:/var/lib/mysql
     networks:
       - root_connection
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"        # Batasi penggunaan CPU maksimal 2 core
+          memory: "1g"       # Batasi penggunaan RAM maksimal 1 GB
 
   phpmyadmin:
     container_name: pma
@@ -34,6 +39,11 @@ services:
       - mysql # Start Service after mysql running
     networks:
       - root_connection
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"        # Batasi penggunaan CPU maksimal 0.5 core
+          memory: "512m"     # Batasi penggunaan RAM maksimal 512 MB
 
 networks:
   root_connection:
