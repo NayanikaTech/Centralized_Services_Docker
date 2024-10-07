@@ -26,3 +26,13 @@ docker network create root_connection
 ```bash
 docker-compose up -d
 ```
+
+Notes Default Ports
+
+```bash
+PhpMyadmin :8083
+```
+
+```bash
+laravel :8000, 8001, etc
+```
