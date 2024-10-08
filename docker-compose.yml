@@ -16,6 +16,8 @@ services:
       - mysql_data:/var/lib/mysql
     networks:
       - root_connection
+    ports:
+      - "3306:3306"
     deploy:
       resources:
         limits:
