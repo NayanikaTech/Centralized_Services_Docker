@@ -21,8 +21,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: "2.0"        # Batasi penggunaan CPU maksimal 2 core
-          memory: "1g"       # Batasi penggunaan RAM maksimal 1 GB
+          cpus: "1.0"        # Batasi penggunaan CPU maksimal 1 core
+          memory: "500m"       # Batasi penggunaan RAM maksimal 500 MB
 
   phpmyadmin:
     container_name: pma
