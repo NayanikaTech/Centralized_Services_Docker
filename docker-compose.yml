@@ -94,7 +94,7 @@ services:
         limits:
           cpus: "0.5"
           memory: "256m"
-          
+
 networks:
   root_connection:
     external: true
